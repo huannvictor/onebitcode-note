@@ -4,12 +4,16 @@ import { Navbar } from "flowbite-react";
 import Image from "next/image";
 import LogoImage from "../../assets/images/logo.svg";
 
+import styles from "./Header.module.css";
+
+const { brand, img } = styles;
+
 function Header() {
   return (
-    <Navbar className="flex flex-row justify-between">
-      <Navbar.Brand className="flex flex-row justify-between gap-2">
-        <Image alt="NerdBox Logo" src={LogoImage} className="h-auto w-8" />
-        <h1>NerdBox Note</h1>
+    <Navbar fluid rounded>
+      <Navbar.Brand className={brand}>
+        <Image alt="NerdBox Logo" src={LogoImage} className={img} />
+        <span>NerdBox Note</span>
       </Navbar.Brand>
 
       <Navbar.Toggle />
