@@ -3,8 +3,15 @@ import PresentationImage from "../../assets/images/presentation.png";
 import Header from "../../components/header";
 import styles from "./Home.module.css";
 
-const { section, columnContainer, columnGroup, column, presentationImg } =
-  styles;
+const {
+  section,
+  columnContainer,
+  columnGroup,
+  column,
+  title,
+  subtitle,
+  presentationImg,
+} = styles;
 
 const HomeScreen = () => (
   <>
@@ -16,22 +23,19 @@ const HomeScreen = () => (
           {/* Coloum.Group do rbx */}
           <div className={column}>
             {/* Primeira coluna com o texto de tamanho 4 */}
-            <div>
+            <div className={title}>
               {/* Título do rbx */}
               Crie, organize e acompanhe suas notas com facilidade. Transforme
-              suas ideias em ação com nosso aplicativo de notas intuitivo e
-              eficiente. Experimente agora e mantenha-se sempre inspirado.
+              suas ideias.
             </div>
 
-            <div>
+            <div className={subtitle}>
               {/* Title com a opção subtitle do rbx */}
               Liberte sua criatividade e mantenha-se organizado com o nosso
               aplicativo de notas! Transforme suas ideias em realidade e nunca
               mais esqueça uma inspiração. Capture pensamentos, anote tarefas
               importantes e crie listas personalizadas para simplificar seu dia
-              a dia. Com uma interface intuitiva e recursos avançados, nosso
-              aplicativo de notas é a ferramenta perfeita para acompanhar sua
-              vida agitada. Experimente agora e deixe sua mente fluir!
+              a dia.
             </div>
           </div>
           <div className={column}>

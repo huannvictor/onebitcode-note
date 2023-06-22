@@ -1,5 +1,9 @@
 .section {
-  @apply p-28 bg-custom-purple h-full;
+  @apply bg-custom-purple h-full
+  md:p-20
+  sm:p-16
+  2sm:p-8
+  3sm:p-4;
 }
 
 .columnContainer {
@@ -7,13 +11,27 @@
 }
 
 .columnGroup {
-  @apply grid grid-cols-2 gap-40;
+  @apply lg:grid lg:grid-cols-2 lg:gap-16
+  sm:flex sm:flex-col sm:gap-8;
 }
 
 .column {
   @apply flex flex-col justify-center items-center gap-8 text-white;
 }
 
+.title {
+  @apply font-semibold 
+  md:text-3xl 
+  sm:text-2xl
+  2sm:text-lg;
+}
+
+.subtitle {
+  @apply font-normal
+  md:text-xl 
+  sm:text-xs;
+}
+
 .presentationImg {
-  @apply w-1/2;
+  @apply lg:w-3/4 sm:w-2/4;
 }

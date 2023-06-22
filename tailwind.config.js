@@ -12,9 +12,10 @@ module.exports = {
         "custom-purple": "#694ED8",
         "custom-purple-darker": "#6600CC",
       },
-    },
-    container: {
-      center: true,
+      screens: {
+        "2sm": "375px",
+        "3sm": "320px",
+      },
     },
   },
   plugins: [require("flowbite/plugin")],
