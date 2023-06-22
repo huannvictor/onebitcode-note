@@ -6,7 +6,7 @@ import LogoImage from "../../assets/images/logo.svg";
 
 import styles from "./Header.module.css";
 
-const { brand, img } = styles;
+const { brand, img, primaryText, cta } = styles;
 
 function Header() {
   return (
@@ -19,13 +19,13 @@ function Header() {
       <Navbar.Toggle />
 
       <Navbar.Collapse>
-        <Navbar.Link active href="#">
+        <Navbar.Link active href="#" className={[cta, primaryText].join(" ")}>
           <p>Home</p>
         </Navbar.Link>
-        <Navbar.Link href="#">
+        <Navbar.Link href="#" className={primaryText}>
           <p>About</p>
         </Navbar.Link>
-        <Navbar.Link href="#">
+        <Navbar.Link href="#" className={primaryText}>
           <p>Contact</p>
         </Navbar.Link>
       </Navbar.Collapse>

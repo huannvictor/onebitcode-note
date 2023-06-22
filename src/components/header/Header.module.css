@@ -1,7 +1,20 @@
 .brand {
-  @apply flex flex-row justify-between gap-2 text-xl align-middle;
+  @apply flex 
+    flex-row 
+    justify-between 
+    gap-2 text-xl 
+    align-middle 
+    font-bold;
 }
 
 .img {
-  @apply h-auto w-8;
+  @apply h-8 w-8;
+}
+
+.cta {
+  @apply text-custom-purple;
+}
+
+.primaryText {
+  @apply hover:text-custom-purple-darker;
 }

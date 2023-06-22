@@ -1,9 +1,9 @@
-import Header from "@/components/header";
+import HomeScreen from "../screens/home";
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <HomeScreen />
     </>
   );
 }

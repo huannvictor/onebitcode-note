@@ -13,6 +13,9 @@ module.exports = {
         "custom-purple-darker": "#6600CC",
       },
     },
+    container: {
+      center: true,
+    },
   },
   plugins: [require("flowbite/plugin")],
 };
