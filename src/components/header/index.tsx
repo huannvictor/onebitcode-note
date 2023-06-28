@@ -19,13 +19,13 @@ function Header() {
       <Navbar.Toggle />
 
       <Navbar.Collapse>
-        <Navbar.Link active href="#" className={[cta, primaryText].join(" ")}>
+        <Navbar.Link active href="/" className={[cta, primaryText].join(" ")}>
           <p>Home</p>
         </Navbar.Link>
-        <Navbar.Link href="#" className={primaryText}>
+        <Navbar.Link href="/about" className={primaryText}>
           <p>About</p>
         </Navbar.Link>
-        <Navbar.Link href="#" className={primaryText}>
+        <Navbar.Link href="/contact" className={primaryText}>
           <p>Contact</p>
         </Navbar.Link>
       </Navbar.Collapse>

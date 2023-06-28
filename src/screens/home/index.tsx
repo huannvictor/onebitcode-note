@@ -1,6 +1,5 @@
 import Image from "next/image";
 import PresentationImage from "../../assets/images/presentation.png";
-import Header from "../../components/header";
 import styles from "./Home.module.css";
 
 const {
@@ -15,12 +14,11 @@ const {
 
 const HomeScreen = () => (
   <>
-    <Header />
     <section className={section}>
       <div className={columnContainer}>
         {/* container do rbx */}
         <div className={columnGroup}>
-          {/* Coloum.Group do rbx */}
+          {/* Column.Group do rbx */}
           <div className={column}>
             {/* Primeira coluna com o texto de tamanho 4 */}
             <div className={title}>
